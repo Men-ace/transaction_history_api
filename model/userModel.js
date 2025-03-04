@@ -9,3 +9,8 @@ export const createUser = (userObject) => {
 export const findUserByEmail = (email) => {
   return userModel.findOne({ email })
 }
+
+// Find user by Email
+export const findUserById = (userId) => {
+  return userModel.findOne({ _id: userId })
+}
